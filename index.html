@@ -3,10 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHOPPING CART</title>
+    <title>CREAMY SHAKES | Store</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="script.js"></script>
+    <div class="flex">
+      <section class="container content-section">
+        <h2 class="section-header">CREAMY MILSHAKES</h2>
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Caramel shake</span>
+            <img class="shop-item-image" src="Images/img1.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">R99.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title"> Vanilla shake</span>
+            <img class="shop-item-image" src="Images/img2.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">R79.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Kiwi shake</span>
+            <img class="shop-item-image" src="Images/img3.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">R89.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Blueberry shake</span>
+            <img class="shop-item-image" src="Images/img4.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">R99.99</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container content-section cart">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">R0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">
+          CHECKOUT
+        </button>
+      </section>
+    </div>
+
+    <script src="script.js" async></script>
   </body>
 </html>
